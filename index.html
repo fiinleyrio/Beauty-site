@@ -2,65 +2,180 @@
 <html>
 <head>
     <title>Natela Skincare</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial;
-            background: #e6ffe6;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fdf8f5, #f7eae4);
+            color: #333;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
             text-align: center;
         }
 
-        h1 {
-            color: #2e8b57;
-            margin-top: 40px;
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            background: rgba(255,255,255,0.9);
+            color: #5a3e36;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
         }
 
         .card {
             background: white;
             padding: 20px;
             margin: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            width: 260px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
             border-radius: 10px;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .reviews {
+            background: #fff;
+            padding: 40px;
+            margin-top: 30px;
+        }
+
+        .review-box {
+            background: #f7eae4;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
             display: inline-block;
             width: 250px;
         }
 
-        .contact {
-            background: #2e8b57;
+        .btn {
+            background: #5a3e36;
             color: white;
-            padding: 20px;
-            border-radius: 15px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
             display: inline-block;
+            margin: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
             margin-top: 20px;
+        }
+
+        footer {
+            background: #e8d8d0;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
 
-<h1>🌿 Natela Skincare</h1>
-<p>Healthy Skin • Natural Glow • Confidence</p>
+<header>
+    <div class="logo">✨ Natela Skincare</div>
+    <h1>Luxury Skincare Experience</h1>
+    <p>Glow • Confidence • Beauty</p>
+</header>
 
-<div class="card">
-    <h3>Skin Analysis</h3>
-    <p>Know your skin type</p>
+<div class="container">
+
+    <h2>Our Services</h2>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1594824804732-ca8dbb12c1b1">
+        <h3>Skin Analysis</h3>
+        <p>Professional consultation</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881">
+        <h3>Facial Treatment</h3>
+        <p>Deep clean & glow</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1556228724-4b4b7f6a9c98">
+        <h3>Routine Plan</h3>
+        <p>Custom skincare plan</p>
+    </div>
+
+    <h2>Before & After</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7d0d3b91f">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
+        <img src="https://images.unsplash.com/photo-1588776814546-ec7e9d2b8f7f">
+    </div>
+
+    <h2>Customer Reviews ⭐</h2>
+
+    <div class="reviews">
+        <div class="review-box">
+            <p>“My skin has never looked this good! Amazing service.”</p>
+            <strong>- Sarah</strong>
+        </div>
+
+        <div class="review-box">
+            <p>“Very professional and relaxing experience.”</p>
+            <strong>- Emily</strong>
+        </div>
+
+        <div class="review-box">
+            <p>“Glowing results after one session!”</p>
+            <strong>- Grace</strong>
+        </div>
+    </div>
+
+    <h2>Book Now</h2>
+
+    <a class="btn" href="https://wa.me/1234567890">WhatsApp</a>
+    <a class="btn" href="https://paypal.me/yourname">Pay Now</a>
+
+    <h2>Our Location</h2>
+
+    <iframe src="https://maps.google.com/maps?q=Nairobi&output=embed"></iframe>
+
 </div>
 
-<div class="card">
-    <h3>Facial Treatment</h3>
-    <p>Deep clean & glow</p>
-</div>
-
-<div class="card">
-    <h3>Routine Plan</h3>
-    <p>Custom skincare routine</p>
-</div>
-
-<h2>Book Me</h2>
-
-<div class="contact">
-    <p>Email: your@email.com</p>
-    <p>Instagram: @yourskincare</p>
-</div>
+<footer>
+    <p>📧 your@email.com | Instagram: @natelaskincare</p>
+</footer>
 
 </body>
 </html>
+  
+
+     
+ 
