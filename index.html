@@ -3,69 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Natela Luxury Skincare</title>
+<title>Natela Beauty</title>
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #1c1c1c, #000);
+    background: linear-gradient(135deg, #000, #1a1a1a, #000);
     color: #fff;
 }
 
+/* CONTAINER */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px;
 }
 
 header h1 {
     color: gold;
+    font-size: 28px;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 15px;
+    color: #ddd;
+    margin-left: 20px;
     text-decoration: none;
 }
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 50px;
+nav a:hover {
     color: gold;
 }
 
-.hero button {
+/* HERO (SIDE BY SIDE) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 55px;
+    color: gold;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.hero-text button {
     padding: 15px 30px;
-    background: gold;
     border: none;
+    background: gold;
     border-radius: 30px;
     cursor: pointer;
 }
 
+.hero img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+/* PRODUCTS GRID (NOT POSTER) */
 .products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 60px 40px;
 }
 
 .product-box {
     background: #111;
-    margin: 15px;
     padding: 20px;
-    width: 250px;
     border-radius: 20px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .product-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255,215,0,0.5);
+    box-shadow: 0 0 30px rgba(255,215,0,0.4);
 }
 
 .product-box img {
@@ -73,21 +109,66 @@ nav a {
     border-radius: 15px;
 }
 
-footer {
-    text-align: center;
-    padding: 40px;
+.product-box h3 {
+    color: gold;
+    margin: 10px 0;
 }
 
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+}
+
+.feature h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* BOOKING */
+.booking {
+    background: #111;
+    padding: 60px;
+    text-align: center;
+}
+
+.booking input {
+    padding: 12px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+}
+
+.booking button {
+    padding: 15px 30px;
+    background: gold;
+    border: none;
+    border-radius: 30px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
-    color: white;
     padding: 15px;
     border-radius: 50%;
+    color: white;
     text-decoration: none;
-    font-size: 20px;
 }
 </style>
 </head>
@@ -99,43 +180,84 @@ footer {
     <nav>
         <a href="#">Home</a>
         <a href="#">Products</a>
-        <a href="#">Contact</a>
+        <a href="#">Book</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Radiant Skin Awaits</h2>
-    <p>Luxury skincare for glowing beauty</p>
-    <button>Shop Now</button>
+    <div class="hero-text">
+        <h2>Luxury Skincare</h2>
+        <p>Premium glow products made for radiant skin in Mombasa</p>
+        <button>Shop Now</button>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
 </section>
 
 <section class="products">
 
 <div class="product-box">
-    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
-    <h3>Glow Serum</h3>
-    <p>Brightens and smooths skin</p>
+<img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
+<h3>Glow Serum</h3>
+<p>Brightens and clears skin</p>
 </div>
 
 <div class="product-box">
-    <img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
-    <h3>Face Cream</h3>
-    <p>Deep hydration and repair</p>
+<img src="https://images.unsplash.com/photo-1612817288484-6f916006741a">
+<h3>Vitamin C</h3>
+<p>Even tone & glow</p>
 </div>
 
 <div class="product-box">
-    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a">
-    <h3>Vitamin C Serum</h3>
-    <p>Boosts glow instantly</p>
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+<h3>Hydrating Cream</h3>
+<p>Deep moisture</p>
+</div>
+
+<div class="product-box">
+<img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be">
+<h3>Radiance Oil</h3>
+<p>Ultimate glow</p>
 </div>
 
 </section>
 
+<section class="features">
+
+<div class="feature">
+<h3>Premium Ingredients</h3>
+<p>High-quality skincare formulas</p>
+</div>
+
+<div class="feature">
+<h3>Proven Results</h3>
+<p>Visible glow and smooth skin</p>
+</div>
+
+<div class="feature">
+<h3>Luxury Experience</h3>
+<p>Feel the difference</p>
+</div>
+
+</section>
+
+<section class="booking">
+<h2 style="color:gold;">Book Appointment</h2>
+
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Phone"><br>
+
+<input type="date">
+<input type="time"><br>
+
+<button>Book Now</button>
+</section>
+
 <footer>
-    <p>📍 Mombasa | 📲 Pay via M-Pesa</p>
+<p>Mombasa, Kenya | 0712345678</p>
 </footer>
 
-<a href="https://wa.me/254700000000" class="whatsapp">💬</a>
+<a href="https://wa.me/254712345678" class="whatsapp">💬</a>
 
 </body>
 </html>
