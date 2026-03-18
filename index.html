@@ -2,7 +2,35 @@
 <html>
 <head>
     <title>Natela Skincare</title>
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
 
+.review-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: gold;
+    margin: 10px 0;
+    font-size: 18px;
+}
     <style>
         body {
             margin: 0;
@@ -59,9 +87,7 @@
             width: 200px;
             margin: 10px;
             border-radius: 10px;
-        }<img src="https://images.unsplash.com/photo-1594824804732-ca8dbb12c1b1">
-<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881">
-<img src="https://images.unsplash.com/photo-1556228724-4b4b7f6a9c98">
+        
 
         .reviews {
             background: #fff;
@@ -139,25 +165,34 @@
         <img src="https://images.unsplash.com/photo-1600185365483-26d7d0d3b91f">
         <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
         <img src="https://images.unsplash.com/photo-1588776814546-ec7e9d2b8f7f">
+   
+</div>
+    <h2>C<h2>Customer Reviews ⭐</h2>
+
+<div class="reviews">
+
+    <div class="review-box">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="review-img">
+        <p>✨ My skin has never looked this good! Amazing service.</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <strong>- Sarah</strong>
     </div>
 
-    <h2>Customer Reviews ⭐</h2>
+    <div class="review-box">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="review-img">
+        <p>💖 Very professional and relaxing experience. Highly recommend!</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <strong>- Emily</strong>
+    </div>
 
-    <div class="reviews">
-        <div class="review-box">
-            <p>“My skin has never looked this good! Amazing service.”</p>
-            <strong>- Sarah</strong>
-        </div>
+    <div class="review-box">
+        <img src="https://randomuser.me/api/portraits/women/90.jpg" class="review-img">
+        <p>🌟 I saw real results after one session. I love it!</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <strong>- Aisha</strong>
+    </div>
 
-        <div class="review-box">
-            <p>“Very professional and relaxing experience.”</p>
-            <strong>- Emily</strong>
-        </div>
-
-        <div class="review-box">
-            <p>“Glowing results after one session!”</p>
-            <strong>- Grace</strong>
-        </div>
+</div>
     </div>
 
     <h2>Book Now</h2>
