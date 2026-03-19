@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Natela Beauty | Luxury Skincare</title>
+
+<title>Natela Beauty | Luxury Skincare Mombasa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -13,8 +16,8 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #1a1a1a, #000);
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #000, #1a1a1a);
   color: #fff;
 }
 
@@ -30,25 +33,29 @@ body {
 
 .hero-text {
   background: rgba(0,0,0,0.6);
-  padding: 40px;
+  padding: 50px;
   border-radius: 20px;
 }
 
-.hero-text h1 {
+.logo {
   font-size: 60px;
+  letter-spacing: 6px;
   color: #FFD7C2;
+  text-transform: uppercase;
 }
 
 .hero-text p {
   margin: 20px 0;
+  font-size: 18px;
 }
 
 .btn {
-  padding: 14px 30px;
+  padding: 14px 35px;
   background: linear-gradient(to right, #FFD7C2, gold);
   color: black;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 50px;
+  font-weight: 500;
 }
 
 /* OFFER */
@@ -59,9 +66,8 @@ body {
   padding: 40px;
 }
 
-/* COUNTDOWN */
 #timer {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   color: red;
   margin-top: 10px;
@@ -72,22 +78,23 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 50px;
 }
 
 .product-box {
-  background: #111;
+  background: linear-gradient(145deg, #111, #1c1c1c);
   margin: 20px;
-  padding: 20px;
+  padding: 25px;
   width: 260px;
   border-radius: 20px;
   text-align: center;
+  border: 1px solid rgba(255,215,0,0.2);
   transition: 0.4s;
 }
 
 .product-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(255,215,0,0.5);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255,215,0,0.3);
 }
 
 .product-box img {
@@ -97,12 +104,18 @@ body {
 
 .product-box h3 {
   color: #FFD7C2;
+  margin: 10px 0;
 }
 
 /* REVIEWS */
 .reviews {
   text-align: center;
-  padding: 50px;
+  padding: 60px;
+}
+
+.reviews h2 {
+  color: #FFD7C2;
+  margin-bottom: 30px;
 }
 
 .review-box {
@@ -113,16 +126,44 @@ body {
   border-radius: 20px;
 }
 
-.review-box img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+/* BOOKING FORM */
+.booking {
+  text-align: center;
+  padding: 60px;
+  background: #111;
+}
+
+.booking input {
+  padding: 12px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+.booking button {
+  padding: 12px 30px;
+  background: gold;
+  border: none;
+  border-radius: 30px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
 }
 </style>
 </head>
@@ -132,7 +173,7 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
-    <h1>Natela Beauty</h1>
+    <h1 class="logo">Natela Beauty</h1>
     <p>Luxury Skincare in Mombasa ✨</p>
     <a href="https://wa.me/2547XXXXXXXX" class="btn">Shop Now</a>
   </div>
@@ -148,7 +189,6 @@ footer {
 
 <!-- PRODUCTS -->
 <section class="products">
-
 <div class="product-box">
 <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
 <h3>Acne Cream</h3>
@@ -166,7 +206,6 @@ footer {
 <h3>Vitamin C</h3>
 <p>Bright & smooth</p>
 </div>
-
 </section>
 
 <!-- REVIEWS -->
@@ -174,30 +213,35 @@ footer {
 <h2>Customer Reviews</h2>
 
 <div class="review-box">
-<img src="https://randomuser.me/api/portraits/women/44.jpg">
 <p>"My skin is glowing 😍"</p>
 <h4>- Amina</h4>
 </div>
 
 <div class="review-box">
-<img src="https://randomuser.me/api/portraits/women/65.jpg">
 <p>"Best skincare in Mombasa!"</p>
 <h4>- Zainab</h4>
 </div>
 
 <div class="review-box">
-<img src="https://randomuser.me/api/portraits/women/68.jpg">
 <p>"I love my results 💎"</p>
 <h4>- Fatima</h4>
 </div>
+</section>
 
+<!-- BOOKING -->
+<section class="booking">
+<h2>Book Appointment</h2>
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Phone"><br>
+<button>Book Now</button>
 </section>
 
 <footer>
 <p>© 2026 Natela Beauty | Mombasa</p>
 </footer>
 
-<!-- TIMER SCRIPT -->
+<a href="https://wa.me/2547XXXXXXXX" class="whatsapp">💬</a>
+
 <script>
 let time = 600;
 setInterval(() => {
