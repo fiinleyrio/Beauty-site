@@ -3,261 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Natela Beauty</title>
+<title>Natela Beauty | Luxury Skincare</title>
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #000, #1a1a1a, #000);
-    color: #fff;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  color: #fff;
 }
 
-/* CONTAINER */
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding: 40px;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-header h1 {
-    color: gold;
-    font-size: 28px;
-}
-
-nav a {
-    color: #ddd;
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: gold;
-}
-
-/* HERO (SIDE BY SIDE) */
+/* HERO */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 40px;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-text {
-    max-width: 500px;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 20px;
 }
 
-.hero-text h2 {
-    font-size: 55px;
-    color: gold;
+.hero-text h1 {
+  font-size: 60px;
+  color: #FFD7C2;
 }
 
 .hero-text p {
-    margin: 20px 0;
-    color: #ccc;
+  margin: 20px 0;
 }
 
-.hero-text button {
-    padding: 15px 30px;
-    border: none;
-    background: gold;
-    border-radius: 30px;
-    cursor: pointer;
+.btn {
+  padding: 14px 30px;
+  background: linear-gradient(to right, #FFD7C2, gold);
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
 }
 
-.hero img {
-    width: 450px;
-    border-radius: 20px;
+/* OFFER */
+.offer {
+  background: linear-gradient(to right, #FFD7C2, gold);
+  color: black;
+  text-align: center;
+  padding: 40px;
 }
 
-/* PRODUCTS GRID (NOT POSTER) */
+/* COUNTDOWN */
+#timer {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+
+/* PRODUCTS */
 .products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
 .product-box {
-    background: #111;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    transition: 0.3s;
+  background: #111;
+  margin: 20px;
+  padding: 20px;
+  width: 260px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.4s;
 }
 
 .product-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255,215,0,0.4);
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255,215,0,0.5);
 }
 
 .product-box img {
-    width: 100%;
-    border-radius: 15px;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .product-box h3 {
-    color: gold;
-    margin: 10px 0;
+  color: #FFD7C2;
 }
 
-/* FEATURES */
-.features {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 40px;
+/* REVIEWS */
+.reviews {
+  text-align: center;
+  padding: 50px;
 }
 
-.feature {
-    width: 30%;
-    text-align: center;
+.review-box {
+  background: #111;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 20px;
 }
 
-.feature h3 {
-    color: gold;
-    margin-bottom: 10px;
-}
-
-/* BOOKING */
-.booking {
-    background: #111;
-    padding: 60px;
-    text-align: center;
-}
-
-.booking input {
-    padding: 12px;
-    margin: 10px;
-    width: 250px;
-    border-radius: 10px;
-    border: none;
-}
-
-.booking button {
-    padding: 15px 30px;
-    background: gold;
-    border: none;
-    border-radius: 30px;
+.review-box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 30px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
+  text-align: center;
+  padding: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Natela Beauty</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Book</a>
-    </nav>
-</header>
-
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <h2>Luxury Skincare</h2>
-        <p>Premium glow products made for radiant skin in Mombasa</p>
-        <button>Shop Now</button>
-    </div>
-
-    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+  <div class="hero-text">
+    <h1>Natela Beauty</h1>
+    <p>Luxury Skincare in Mombasa ✨</p>
+    <a href="https://wa.me/2547XXXXXXXX" class="btn">Shop Now</a>
+  </div>
 </section>
 
+<!-- OFFER -->
+<section class="offer">
+  <h2>🔥 Special Offer</h2>
+  <p>Buy 2 Products → Get 1 FREE 🎁</p>
+  <p>Offer ends in:</p>
+  <div id="timer">10:00</div>
+</section>
+
+<!-- PRODUCTS -->
 <section class="products">
 
 <div class="product-box">
-<img src="https://images.unsplash.com/photo-1585386959984-a41552231658">
-<h3>Glow Serum</h3>
-<p>Brightens and clears skin</p>
+<img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908">
+<h3>Acne Cream</h3>
+<p>Clear smooth skin</p>
 </div>
 
 <div class="product-box">
-<img src="https://images.unsplash.com/photo-1612817288484-6f916006741a">
+<img src="https://images.unsplash.com/photo-1588000665393-22e6f84c0c9c">
+<h3>Glow Oil</h3>
+<p>Radiant glow</p>
+</div>
+
+<div class="product-box">
+<img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9">
 <h3>Vitamin C</h3>
-<p>Even tone & glow</p>
-</div>
-
-<div class="product-box">
-<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
-<h3>Hydrating Cream</h3>
-<p>Deep moisture</p>
-</div>
-
-<div class="product-box">
-<img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be">
-<h3>Radiance Oil</h3>
-<p>Ultimate glow</p>
+<p>Bright & smooth</p>
 </div>
 
 </section>
 
-<section class="features">
+<!-- REVIEWS -->
+<section class="reviews">
+<h2>Customer Reviews</h2>
 
-<div class="feature">
-<h3>Premium Ingredients</h3>
-<p>High-quality skincare formulas</p>
+<div class="review-box">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<p>"My skin is glowing 😍"</p>
+<h4>- Amina</h4>
 </div>
 
-<div class="feature">
-<h3>Proven Results</h3>
-<p>Visible glow and smooth skin</p>
+<div class="review-box">
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+<p>"Best skincare in Mombasa!"</p>
+<h4>- Zainab</h4>
 </div>
 
-<div class="feature">
-<h3>Luxury Experience</h3>
-<p>Feel the difference</p>
+<div class="review-box">
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+<p>"I love my results 💎"</p>
+<h4>- Fatima</h4>
 </div>
 
-</section>
-
-<section class="booking">
-<h2 style="color:gold;">Book Appointment</h2>
-
-<input type="text" placeholder="Name">
-<input type="text" placeholder="Phone"><br>
-
-<input type="date">
-<input type="time"><br>
-
-<button>Book Now</button>
 </section>
 
 <footer>
-<p>Mombasa, Kenya | 0712345678</p>
+<p>© 2026 Natela Beauty | Mombasa</p>
 </footer>
 
-<a href="https://wa.me/254712345678" class="whatsapp">💬</a>
+<!-- TIMER SCRIPT -->
+<script>
+let time = 600;
+setInterval(() => {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  document.getElementById("timer").innerHTML =
+    minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+  if (time > 0) time--;
+}, 1000);
+</script>
 
 </body>
 </html>
